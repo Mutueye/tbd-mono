@@ -1,0 +1,9 @@
+{
+  "extends": "@vvts-mono/ts-config/tsconfig.rollup.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "types": ["vite/client", "@vvts-mono/env-config/env"],
+    "lib": ["DOM", "ES2015", "ESNext"]
+  },
+  "include": ["**/*.ts", "**/*.d.ts"]
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "@vvts-mono/ts-config/tsconfig.vue.json",
+  "compilerOptions": {
+    "paths": { "@/*": ["./src/*"] },
+    "types": ["element-plus/global", "@vvts-mono/env-config/env", "@vvts-mono/types"]
+  },
+  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx", "./**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

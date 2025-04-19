@@ -1,0 +1,4 @@
+{
+  "extends": "@vvts-mono/ts-config/tsconfig.vite.json",
+  "include": ["vite.config.ts", "uno.config.ts"]
+}

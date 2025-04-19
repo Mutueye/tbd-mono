@@ -1,0 +1,31 @@
+{
+  "name": "@vvts-mono/uno-config",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "lint:staged": "npx lint-staged",
+    "lint:es:fix": "eslint --debug --fix",
+    "lint:es:check": "eslint --debug"
+  },
+  "dependencies": {
+    "@itshixun/qst-ui-system": "^0.3.1",
+    "lodash-es": "^4.17.21",
+    "pinia": "^3.0.1",
+    "unocss": "^65.5.0"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^22.13.4",
+    "@vvts-mono/eslint-config": "workspace:^",
+    "@vvts-mono/prettier-config": "workspace:^",
+    "@vvts-mono/ts-config": "workspace:^",
+    "eslint": "^9.20.1",
+    "lint-staged": "^15.4.3",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  },
+  "lint-staged": {
+    "*.{vue,js,cjs,ts,jsx,tsx}": "eslint --fix"
+  }
+}

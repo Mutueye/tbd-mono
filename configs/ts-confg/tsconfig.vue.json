@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "resolveJsonModule": true,
+    "moduleResolution": "Node10",
+    "lib": ["DOM", "ESNext"],
+    "verbatimModuleSyntax": false,
+    "noEmit": true,
+    "skipLibCheck": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@vvts-mono/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build:lib": "rimraf dist && tsc -p .",
+    "dev:lib": "tsc --watch -p .",
+    "lint:staged": "pnpm lint-staged",
+    "lint:es:fix": "eslint --debug --fix",
+    "lint:es:check": "eslint --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@itshixun/qst-utils": "^1.1.2",
+    "konva": "^9.3.18",
+    "mitt": "^3.0.1",
+    "nanoid": "^5.0.9"
+  },
+  "devDependencies": {
+    "@vvts-mono/eslint-config": "workspace:^",
+    "@vvts-mono/prettier-config": "workspace:^",
+    "@vvts-mono/ts-config": "workspace:^",
+    "eslint": "^9.19.0",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,md,json}": "eslint --fix"
+  }
+}

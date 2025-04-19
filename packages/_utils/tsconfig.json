@@ -1,0 +1,7 @@
+{
+  "extends": "@vvts-mono/ts-config/tsconfig.rollup.json",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": ["/**/*.ts", "src/**/*.d.ts"]
+}

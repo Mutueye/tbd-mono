@@ -1,0 +1,23 @@
+{
+  "name": "tbd-mono",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "simple-git-hooks && pnpm build:lib",
+    "build:lib": "pnpm -r build:lib",
+    "dev:lib": "pnpm -r dev:lib",
+    "dev": "pnpm build:lib && concurrently \"pnpm dev:lib\" \"pnpm -F web-app dev\"",
+    "build": "pnpm build:lib && pnpm -F web-app build",
+    "lint-staged": "pnpm -r --workspace-concurrency=1 lint:staged",
+    "lint:es:check": "pnpm -r lint:es:check",
+    "lint:es:fix": "pnpm -r lint:es:fix",
+    "lint:style:check": "pnpm -r lint:style:check",
+    "lint:style:fix": "pnpm -r lint:style:fix"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm -r --workspace-concurrency=1 lint:staged"
+  }
+}

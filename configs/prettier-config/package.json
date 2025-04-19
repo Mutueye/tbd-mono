@@ -1,0 +1,9 @@
+{
+  "name": "@vvts-mono/prettier-config",
+  "version": "1.0.0",
+  "main": "./prettier.config.js",
+  "type": "module",
+  "peerDependencies": {
+    "prettier": "^3.4.2"
+  }
+}

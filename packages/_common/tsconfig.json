@@ -1,0 +1,7 @@
+{
+  "extends": "@vvts-mono/ts-config/tsconfig.vue.json",
+  "compilerOptions": {
+    "types": ["element-plus/global", "@vvts-mono/env-config/env", "@vvts-mono/types"]
+  },
+  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx", "./**/*.vue"]
+}

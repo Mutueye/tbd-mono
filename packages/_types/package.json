@@ -1,0 +1,29 @@
+{
+  "name": "@vvts-mono/types",
+  "version": "1.0.0",
+  "main": "index.d.ts",
+  "type": "module",
+  "scripts": {
+    "lint:staged": "pnpm lint-staged",
+    "lint:es:fix": "eslint --debug --fix",
+    "lint:es:check": "eslint --debug"
+  },
+  "dependencies": {
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@vvts-mono/env-config": "workspace:^",
+    "@vvts-mono/eslint-config": "workspace:^",
+    "@vvts-mono/prettier-config": "workspace:^",
+    "@vvts-mono/ts-config": "workspace:^",
+    "eslint": "^9.20.1",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
+  }
+}

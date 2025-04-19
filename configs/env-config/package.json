@@ -1,0 +1,11 @@
+{
+  "name": "@vvts-mono/env-config",
+  "version": "1.0.0",
+  "description": "vite env defination file for vite ts projects",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^6.1.0",
+    "vue": "^3.5.13"
+  }
+}

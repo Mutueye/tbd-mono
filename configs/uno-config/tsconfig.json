@@ -1,0 +1,7 @@
+{
+  "extends": "@vvts-mono/ts-config/tsconfig.vite.json",
+  "compilerOptions": {
+    "lib": ["DOM", "ES2015", "ESNext"]
+  },
+  "include": ["/**/*.ts", "/**/*.d.ts"]
+}

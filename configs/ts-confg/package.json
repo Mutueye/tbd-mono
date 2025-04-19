@@ -1,0 +1,9 @@
+{
+  "name": "@vvts-mono/ts-config",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
