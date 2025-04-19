@@ -5,8 +5,8 @@
     "prepare": "simple-git-hooks && pnpm build:lib",
     "build:lib": "pnpm -r build:lib",
     "dev:lib": "pnpm -r dev:lib",
-    "dev": "pnpm build:lib && concurrently \"pnpm dev:lib\" \"pnpm -F web-app dev\"",
-    "build": "pnpm build:lib && pnpm -F web-app build",
+    "dev-landing": "pnpm build:lib && concurrently \"pnpm dev:lib\" \"pnpm -F landing-web dev\"",
+    "build-landing": "pnpm build:lib && pnpm -F landing-web build",
     "lint-staged": "pnpm -r --workspace-concurrency=1 lint:staged",
     "lint:es:check": "pnpm -r lint:es:check",
     "lint:es:fix": "pnpm -r lint:es:fix",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
-    "simple-git-hooks": "^2.11.1"
+    "simple-git-hooks": "^2.12.1"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm -r --workspace-concurrency=1 lint:staged"

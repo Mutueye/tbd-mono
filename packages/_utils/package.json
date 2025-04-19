@@ -16,19 +16,19 @@
   "license": "MIT",
   "dependencies": {
     "@itshixun/qst-utils": "^1.1.2",
-    "konva": "^9.3.18",
+    "konva": "^9.3.20",
     "mitt": "^3.0.1",
-    "nanoid": "^5.0.9"
+    "nanoid": "^5.1.5"
   },
   "devDependencies": {
     "@vvts-mono/eslint-config": "workspace:^",
     "@vvts-mono/prettier-config": "workspace:^",
     "@vvts-mono/ts-config": "workspace:^",
-    "eslint": "^9.19.0",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.4.2",
+    "eslint": "^9.25.0",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.3"
   },
   "lint-staged": {
     "*.{js,ts,md,json}": "eslint --fix"

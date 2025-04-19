@@ -1,4 +1,17 @@
-# vite-vue3-ts monorepo scaffold
+# vite-vue3-ts monorepo
+
+## scripts
+
+```bash
+# 安装
+pnpm i
+
+# 启动门户站开发
+pnpm dev-landing
+
+# 构建门户
+pnpm build-landing
+```
 
 vite + vue3 + typescript 基于 pnpm 的多包项目框架，项目使用技术栈见下表：
 
