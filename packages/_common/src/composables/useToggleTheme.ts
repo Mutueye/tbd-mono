@@ -1,5 +1,4 @@
-import { onMounted } from 'vue';
-import { currentThemeList, currentThemeOption, setThemeClassByIndex } from '@itshixun/qst-ui-system';
+import { currentThemeList, setThemeClassByIndex } from '@itshixun/qst-ui-system';
 import { useLocalStorage } from '@vueuse/core';
 
 /**
@@ -8,7 +7,7 @@ import { useLocalStorage } from '@vueuse/core';
  * @param defaultThemeIndex 使用useLocalStorage来配置主题索引时的默认值
  */
 export const useToggleTheme = (defaultThemeIndex: number = 0) => {
-  const themeIndex = useLocalStorage('qst-theme-index', defaultThemeIndex);
+  const themeIndex = useLocalStorage('tbd-theme-index', defaultThemeIndex);
 
   const changeThemeByIndex = (index: number) => {
     setThemeClassByIndex(index);

@@ -4,7 +4,7 @@
  */
 
 import 'vue-router';
-import { RouteMeta } from 'vue-router';
+import { RouteMeta, RouteRecordNameGeneric } from 'vue-router';
 
 export interface MenuConfig {
   /** 菜单图标样式名称 */
@@ -13,8 +13,8 @@ export interface MenuConfig {
   order?: number;
   /** 不在菜单中显示  */
   hidden?: boolean;
-  /** 指定要高亮的菜单对应的路由path，以'/'开头的完整path */
-  activeRoutePath?: string;
+  /** 指定要高亮的菜单对应的路由name */
+  activeRouteName?: string;
   /** 菜单权限表达式 */
   perm?: string | string[];
   /** 指定跳转的路由path或标准url*/
@@ -24,7 +24,9 @@ export interface MenuConfig {
 }
 
 export interface MenuItemData {
-  path: string;
+  /** vue-router的name，用于匹配路由 */
+  name: string;
+  /** vue-router的meta数据 */
   meta?: RouteMeta;
   children?: MenuItemData[];
 }

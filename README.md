@@ -6,12 +6,14 @@
 # 安装
 pnpm i
 
-# 启动门户站开发
+# 门户网站 启动开发服务
 pnpm dev-landing
 
-# 构建门户
+# 门户网站 build打包
 pnpm build-landing
 ```
+
+## 技术栈
 
 vite + vue3 + typescript 基于 pnpm 的多包项目框架，项目使用技术栈见下表：
 

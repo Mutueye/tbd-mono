@@ -1,4 +1,4 @@
-export const iconCollectionName = 'uplus';
+export const iconCollectionName = 'ics';
 
 export const iconCollection = {
   /** logo */
