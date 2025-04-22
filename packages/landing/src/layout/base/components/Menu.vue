@@ -1,5 +1,5 @@
 <template>
-  <el-menu default-active="activeRouteName" mode="horizontal" class="base-menu w-full">
+  <el-menu :default-active="activeRouteName" mode="horizontal" class="base-menu w-full">
     <template v-for="item in menuData" :key="item.name">
       <div v-if="item.children && item.children.length > 0">
         <div class="xxx">{{ item.children }}</div>
