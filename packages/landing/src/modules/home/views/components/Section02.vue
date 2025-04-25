@@ -22,8 +22,8 @@
 
 <script lang="ts" setup>
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
-  import SectionTitle from './SectionTitle.vue';
-  import SectionWrapper from './SectionWrapper.vue';
+  import SectionTitle from '@/components/SectionTitle.vue';
+  import SectionWrapper from '@/components/SectionWrapper.vue';
   import avatar_1 from '@/assets/images/avatar_1.png';
   import avatar_2 from '@/assets/images/avatar_2.png';
   import avatar_3 from '@/assets/images/avatar_3.png';

@@ -22,12 +22,14 @@
 </template>
 
 <script lang="ts" setup>
-  import { router } from '@/router';
+  import { useRouter } from 'vue-router';
   import BannerCards from './BannerCards.vue';
 
   const banner_title = '轻松订阅海外软件服务';
   const banner_intro = `无需改变习惯，即刻进入支付新时代；
-  更公道的价格，更卓越的性能，更有保障的安全和服务。`;
+更公道的价格，更卓越的性能，更有保障的安全和服务。`;
+
+  const router = useRouter();
 </script>
 
 <style lang="scss" scoped>

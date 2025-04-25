@@ -6,10 +6,10 @@
 # 安装
 pnpm i
 
-# 门户网站 启动开发服务
+# landing-page dev server
 pnpm dev-landing
 
-# 门户网站 build打包
+# landing-page build
 pnpm build-landing
 ```
 

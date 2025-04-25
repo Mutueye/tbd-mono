@@ -8,7 +8,7 @@
             <div class="text-size-18px md:text-size-30px lg:text-size-40px color-text-primary font-500">
               {{ title }}
             </div>
-            <div class="text-size-12px md:text-size-16px color-text-primary">{{ info }}</div>
+            <div class="text-size-12px md:text-size-16px color-text-primary mt-spacing">{{ info }}</div>
           </div>
           <div class="flex-shrink-0 size-72px md:(size-200px) lg:(size-260px) ml-spacing-xs">
             <img :src="PerksImg" class="w-full h-auto object-cover" />
@@ -21,7 +21,7 @@
 
 <script lang="ts" setup>
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
-  import SectionWrapper from './SectionWrapper.vue';
+  import SectionWrapper from '@/components/SectionWrapper.vue';
   import PerksImg from '@/assets/images/perks.svg';
 
   const title = '邀请返佣';

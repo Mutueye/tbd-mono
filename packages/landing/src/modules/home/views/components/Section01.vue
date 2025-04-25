@@ -13,8 +13,8 @@
 
 <script lang="ts" setup>
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
-  import SectionTitle from './SectionTitle.vue';
-  import SectionWrapper from './SectionWrapper.vue';
+  import SectionTitle from '@/components/SectionTitle.vue';
+  import SectionWrapper from '@/components/SectionWrapper.vue';
   import support_img_1 from '@/assets/images/support_1.png';
   import support_img_2 from '@/assets/images/support_2.png';
 
