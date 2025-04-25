@@ -1,5 +1,5 @@
 <template>
-  <div :key="layout" class="w-full flex flex-col items-center">
+  <div :key="layout" class="w-full flex flex-col items-center bg-bg-page">
     <Header :layout="layout" />
     <RouterView />
   </div>

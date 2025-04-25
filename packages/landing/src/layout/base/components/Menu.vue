@@ -6,10 +6,7 @@
         <el-sub-menu :index="item.name" :title="item.meta?.title">
           <template v-for="child in item.children" :key="child.name">
             <el-menu-item :index="child.name">
-              <RouterLink
-                :to="{ name: child.name }"
-                class="px-spacing"
-                :target="child.meta?.blank ? '_blank' : '_self'">
+              <RouterLink :to="{ name: child.name }" :target="child.meta?.blank ? '_blank' : '_self'">
                 {{ child.meta?.title }}
               </RouterLink>
             </el-menu-item>
@@ -63,7 +60,7 @@
 
         @apply color-text-regular;
         a {
-          @apply px-spacing decoration-none font-bold text-size-16px;
+          @apply px-4px md:px-spacing decoration-none font-bold text-size-16px;
         }
         &:hover {
           background-color: transparent;
