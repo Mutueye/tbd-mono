@@ -2,8 +2,8 @@
   <ResponsiveContainer class="pb-64px">
     <SectionWrapper>
       <SectionTitle
-        title="全面的开放能力 实现高效集成"
-        sub-title="丰富灵活的开放能力，流畅便捷的开发体验，优易付深度整合解决方案" />
+        :title="t('全面的开放能力 实现高效集成')"
+        :sub-title="t('丰富灵活的开放能力，流畅便捷的开发体验，优易付深度整合解决方案')" />
       <SectionContentFlow />
       <div class="grid gap-spacing-sm grid-cols-1 df:(grid-cols-3 gap-spacing-xxl)">
         <div
@@ -26,6 +26,7 @@
 
 <script lang="ts" setup>
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
+  import { t } from '@/languages';
   import SectionTitle from '@/components/SectionTitle.vue';
   import SectionWrapper from '@/components/SectionWrapper.vue';
   import SectionContentFlow from './SectionContentFlow.vue';

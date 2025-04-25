@@ -11,7 +11,7 @@
           <el-button type="primary" round size="small" @click="goCS">
             <div class="flex-row-center">
               <i class="i-mdi:customer-service size-16px mr-4px" />
-              <span>在线客服</span>
+              <span>{{ t('在线客服') }}</span>
             </div>
           </el-button>
         </div>
@@ -24,8 +24,9 @@
 </template>
 
 <script setup lang="ts">
-  defineProps<{ layout: string }>();
   import Menu from './Menu.vue';
+  import { t } from '@/languages';
+  defineProps<{ layout: string }>();
 
   const goCS = () => {
     // TODO 跳转到客服页面

@@ -16,6 +16,7 @@
 
 <script setup lang="ts">
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
+  import { t } from '@/languages';
   import icon_1 from '@/assets/images/icon_1.png';
   import icon_2 from '@/assets/images/icon_2.png';
   import icon_3 from '@/assets/images/icon_3.png';
@@ -23,24 +24,24 @@
 
   const cards: { title: string; icon: string; desc: string }[] = [
     {
-      title: '无需实名',
+      title: t('无需实名'),
       icon: icon_1,
-      desc: '无需您提交任何实名认证（KYC）文件，即可快速完成开卡并投入使用，确保您隐私安全的充分保障。',
+      desc: t('无需您提交任何实名认证（KYC）文件，即可快速完成开卡并投入使用，确保您隐私安全的充分保障。'),
     },
     {
-      title: '无限开卡',
+      title: t('无限开卡'),
       icon: icon_2,
-      desc: '根据您的会员权益最多可支持无限的开卡数量，享受个性化的服务和体验。',
+      desc: t('根据您的会员权益最多可支持无限的开卡数量，享受个性化的服务和体验。'),
     },
     {
-      title: '开发接入',
+      title: t('开发接入'),
       icon: icon_3,
-      desc: '如果您有市场营销策略，且具备一定的开发能力，您可以通过API快速部署您自己的站点。',
+      desc: t('如果您有市场营销策略，且具备一定的开发能力，您可以通过API快速部署您自己的站点。'),
     },
     {
-      title: '高可用性',
+      title: t('高可用性'),
       icon: icon_4,
-      desc: '金融级的集群服务以及精心优化的网络线路，确保我们的服务拥有极高的可用性用以支撑您业务需求。',
+      desc: t('金融级的集群服务以及精心优化的网络线路，确保我们的服务拥有极高的可用性用以支撑您业务需求。'),
     },
   ];
 </script>

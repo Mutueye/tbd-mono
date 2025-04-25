@@ -13,6 +13,10 @@ pnpm dev-landing
 pnpm build-landing
 ```
 
+## i18n
+
+[voerkai18n get started](https://zhangfisher.github.io/voerka-i18n/zh/guide/intro/get-started.html)
+
 ## 技术栈
 
 vite + vue3 + typescript 基于 pnpm 的多包项目框架，项目使用技术栈见下表：

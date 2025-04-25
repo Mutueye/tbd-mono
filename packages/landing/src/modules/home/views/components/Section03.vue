@@ -22,9 +22,11 @@
 <script lang="ts" setup>
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
   import SectionWrapper from '@/components/SectionWrapper.vue';
+  import { t } from '@/languages';
   import PerksImg from '@/assets/images/perks.svg';
 
-  const title = '邀请返佣';
-  const info =
-    '如果你觉得平台能给你和身边的朋友带来价值，可以复制下述地址分享给身边的朋友，若邀请的新用户在平台中有消费行为，你将获得平台一定的奖励';
+  const title = t('邀请返佣');
+  const info = t(
+    '如果你觉得平台能给你和身边的朋友带来价值，可以复制下述地址分享给身边的朋友，若邀请的新用户在平台中有消费行为，你将获得平台一定的奖励'
+  );
 </script>

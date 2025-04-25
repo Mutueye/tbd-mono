@@ -2,7 +2,7 @@
   <div class="w-full bg-bg pb-64px">
     <ResponsiveContainer>
       <SectionWrapper>
-        <SectionTitle title="常见问题" />
+        <SectionTitle :title="t('常见问题')" />
         <el-collapse v-model="activeName" accordion class="custom-collapse">
           <el-collapse-item v-for="item in qaData" :key="item.id" :name="item.id" :title="item.title">
             <div class="whitespace-pre-wrap text-size-14px">{{ item.content }}</div>
@@ -15,6 +15,7 @@
 
 <script lang="ts" setup>
   import { ref } from 'vue';
+  import { t } from '@/languages';
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
   import SectionWrapper from '../../../../components/SectionWrapper.vue';
   import SectionTitle from '../../../../components/SectionTitle.vue';

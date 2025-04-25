@@ -20,18 +20,20 @@
 </template>
 
 <script setup lang="ts">
+  import { t } from '@/languages';
+
   const data = [
     {
-      title: '开发准备',
+      title: t('开发准备'),
     },
     {
-      title: '开发调试（沙箱）',
+      title: t('开发调试（沙箱）'),
     },
     {
-      title: '测试发布（沙箱）',
+      title: t('测试发布（沙箱）'),
     },
     {
-      title: '上线运营',
+      title: t('上线运营'),
     },
   ];
 </script>

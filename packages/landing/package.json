@@ -24,6 +24,8 @@
     "@itshixun/qst-request-lib": "^1.1.12",
     "@itshixun/qst-ui-system": "^0.3.7",
     "@itshixun/vrouter-tools": "^0.0.4",
+    "@voerkai18n/formatters": "^3.0.10",
+    "@voerkai18n/runtime": "^3.0.10",
     "@vueuse/core": "^13.1.0",
     "@vvts-mono/common": "workspace:^",
     "@vvts-mono/uno-config": "workspace:^",

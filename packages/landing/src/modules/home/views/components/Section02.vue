@@ -2,8 +2,8 @@
   <ResponsiveContainer>
     <SectionWrapper>
       <SectionTitle
-        title="多样的集成方案 满足业务所需"
-        sub-title="基于开放能力灵活定制，满足复杂业务场景，助力团队数字化升级" />
+        :title="t('多样的集成方案 满足业务所需')"
+        :sub-title="t('基于开放能力灵活定制，满足复杂业务场景，助力团队数字化升级')" />
       <div class="grid gap-spacing-sm grid-cols-1 md:(grid-cols-2 gap-spacing) df:(grid-cols-4 gap-spacing-xxl)">
         <div
           v-for="(item, index) in dataList"
@@ -22,6 +22,7 @@
 
 <script lang="ts" setup>
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
+  import { t } from '@/languages';
   import SectionTitle from '@/components/SectionTitle.vue';
   import SectionWrapper from '@/components/SectionWrapper.vue';
   import avatar_1 from '@/assets/images/avatar_1.png';
