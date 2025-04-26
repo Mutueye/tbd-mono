@@ -1,8 +1,9 @@
 <template>
   <div class="flex flex-col items-center df:(flex-row justify-between) mb-64px lg:mb-72px xl:mb-96px">
     <template v-for="(item, index) in data" :key="index">
-      <div class="flex flex-row items-center">
-        <div class="size-40px bg-bg border-primary-light-7 rounded-full flex-row-center mr-spacing-md">
+      <div class="flex flex-col items-center df:flex-row">
+        <div
+          class="size-40px flex-shrink-0 bg-bg border-primary-light-7 border-1px border-solid rounded-full flex-row-center mb-spacing-xs df:(mb-0 mr-spacing-md)">
           <div class="text-size-20px font-bold color-text-primary">{{ index + 1 }}</div>
         </div>
         <div class="text-size-16px font-bold color-text-primary md:text-size-18px lg:text-size-22px">

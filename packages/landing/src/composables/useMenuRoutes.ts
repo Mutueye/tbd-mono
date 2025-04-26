@@ -32,7 +32,11 @@ export const useMenuRoutes = (layoutRouteName: string, customFilter?: (routes: M
         }
         const menuItemData: MenuItemData = {
           name: route.name?.toString() || '',
-          meta: { title: route.meta.title as string, menuConfig: route.meta.menuConfig as MenuConfig },
+          meta: {
+            title: route.meta.title as string,
+            i18ntitle: route.meta.i18ntitle,
+            menuConfig: route.meta.menuConfig as MenuConfig,
+          },
         };
         if (route.children && route.children.length > 0) {
           menuItemData.children = recursiveMenuData(route.children);

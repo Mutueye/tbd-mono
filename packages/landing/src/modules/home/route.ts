@@ -1,5 +1,4 @@
 import { type RouteRecordData } from '@/router';
-import { t } from '@/languages';
 
 const Home = () => import('./views/Home.vue');
 
@@ -10,7 +9,8 @@ const routeData: RouteRecordData = {
       name: 'home',
       component: Home,
       meta: {
-        title: t('首页'),
+        title: '首页',
+        i18ntitle: { 'zh-CN': '首页', 'en-US': 'HOME' },
         menuConfig: {
           iconClass: 'i-ics:dashboard',
           order: 1,

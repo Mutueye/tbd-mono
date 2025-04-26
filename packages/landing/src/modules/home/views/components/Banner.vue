@@ -1,7 +1,7 @@
 <template>
   <div class="w-full min-h-100vh py-100px flex-row-center banner-bg">
-    <ResponsiveContainer>
-      <div class="flex-col-center">
+    <div class="w-full flex flex-col px-0 lg:(mx-auto w-980px) xl:(mx-auto w-1200px)">
+      <div class="flex-col-center px-spacing">
         <div
           class="color-text-primary text-size-24px text-center md:text-size-40px df:text-size-50px lg:text-size-60px font-500">
           {{ banner_title }}
@@ -19,9 +19,9 @@
             <i class="i-mdi:arrow-right-thin size-24px ml-4px" />
           </div>
         </el-button>
-        <BannerCards />
       </div>
-    </ResponsiveContainer>
+      <BannerCards />
+    </div>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full pt-56px h-300px md:h-400px df:h-450px lg:h-600px flex-row-center banner-bg">
+  <div class="w-full pt-86px df:pt-126px pb-56px md:h-400px df:h-450px lg:h-600px flex-row-center banner-bg">
     <ResponsiveContainer>
       <div class="flex flex-col items-start">
         <div

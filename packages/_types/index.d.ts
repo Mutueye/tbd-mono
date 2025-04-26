@@ -37,6 +37,8 @@ declare module 'vue-router' {
   interface RouteMeta {
     /** 页面标题 */
     title: string;
+    /** i18n标题 .e.g {'zh-CN': '首页', 'en-US': 'HOME'} */
+    i18ntitle?: Record<string, string>;
     /** layout菜单通过遍历路由树的menuConfig来生成菜单树 */
     menuConfig?: MenuConfig;
     /** 当前路由是否不需要登录即可访问。默认路由需要登录，在路由拦截器判断如果当前没有登录，跳转到登录页，除非当前路由meta.isPublic设为true */

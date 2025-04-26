@@ -4,7 +4,11 @@
       <SectionWrapper>
         <SectionTitle :title="t('常见问题')" />
         <el-collapse v-model="activeName" accordion class="custom-collapse">
-          <el-collapse-item v-for="item in qaData" :key="item.id" :name="item.id" :title="item.title">
+          <el-collapse-item
+            v-for="item in qaData[i18nScope.activeLanguage]"
+            :key="item.id"
+            :name="item.id"
+            :title="item.title">
             <div class="whitespace-pre-wrap text-size-14px">{{ item.content }}</div>
           </el-collapse-item>
         </el-collapse>
@@ -14,40 +18,69 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue';
+  import { ref, computed } from 'vue';
   import { t } from '@/languages';
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
   import SectionWrapper from '../../../../components/SectionWrapper.vue';
   import SectionTitle from '../../../../components/SectionTitle.vue';
+  import { i18nScope } from '@/languages';
 
   const activeName = ref('1');
 
-  const qaData = [
-    {
-      title: '如何使用？',
-      id: '1',
-      content: `使用前请先注册，注册后，您可以在首页看到您的账户信息。
+  const qaData: Record<string, { title: string; id: string; content: string }[]> = {
+    'zh-CN': [
+      {
+        title: '如何使用？',
+        id: '1',
+        content: `使用前请先注册，注册后，您可以在首页看到您的账户信息。
 点击头像进入个人中心，在个人中心可以设置您的头像，昵称，密码等。`,
-    },
-    {
-      title: '如何使用？',
-      id: '2',
-      content:
-        '使用前请先注册，注册后，您可以在首页看到您的账户信息，点击头像进入个人中心，在个人中心可以设置您的头像，昵称，密码等。',
-    },
-    {
-      title: '如何使用？',
-      id: '3',
-      content:
-        '使用前请先注册，注册后，您可以在首页看到您的账户信息，点击头像进入个人中心，在个人中心可以设置您的头像，昵称，密码等。',
-    },
-    {
-      title: '如何使用？',
-      id: '4',
-      content:
-        '使用前请先注册，注册后，您可以在首页看到您的账户信息，点击头像进入个人中心，在个人中心可以设置您的头像，昵称，密码等。',
-    },
-  ];
+      },
+      {
+        title: '如何使用？',
+        id: '2',
+        content:
+          '使用前请先注册，注册后，您可以在首页看到您的账户信息，点击头像进入个人中心，在个人中心可以设置您的头像，昵称，密码等。',
+      },
+      {
+        title: '如何使用？',
+        id: '3',
+        content:
+          '使用前请先注册，注册后，您可以在首页看到您的账户信息，点击头像进入个人中心，在个人中心可以设置您的头像，昵称，密码等。',
+      },
+      {
+        title: '如何使用？',
+        id: '4',
+        content:
+          '使用前请先注册，注册后，您可以在首页看到您的账户信息，点击头像进入个人中心，在个人中心可以设置您的头像，昵称，密码等。',
+      },
+    ],
+    'en-US': [
+      {
+        title: 'How to use ?',
+        id: '1',
+        content: `Please register before use. After registration, you can view your account information on the homepage.
+Click on your avatar to enter the personal center, where you can set your avatar, nickname, password, etc.`,
+      },
+      {
+        title: 'How to use ?',
+        id: '2',
+        content:
+          'Please register before use. After registration, you can view your account information on the homepage.Click on your avatar to enter the personal center, where you can set your avatar, nickname, password, etc.',
+      },
+      {
+        title: 'How to use ?',
+        id: '3',
+        content:
+          'Please register before use. After registration, you can view your account information on the homepage.Click on your avatar to enter the personal center, where you can set your avatar, nickname, password, etc.',
+      },
+      {
+        title: 'How to use ?',
+        id: '4',
+        content:
+          'Please register before use. After registration, you can view your account information on the homepage.Click on your avatar to enter the personal center, where you can set your avatar, nickname, password, etc.',
+      },
+    ],
+  };
 </script>
 
 <style lang="scss">

@@ -1,6 +1,4 @@
 import { type RouteRecordData } from '@/router';
-import { t } from '@/languages';
-
 const Access = () => import('./views/Access.vue');
 
 const routeData: RouteRecordData = {
@@ -10,7 +8,8 @@ const routeData: RouteRecordData = {
       name: 'access',
       component: Access,
       meta: {
-        title: t('接入'),
+        title: '接入',
+        i18ntitle: { 'zh-CN': '接入', 'en-US': 'ACCESS' },
         menuConfig: {
           iconClass: 'i-ics:dashboard',
           order: 2,

@@ -25,42 +25,86 @@
 </template>
 
 <script lang="ts" setup>
+  import { computed } from 'vue';
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
   import { t } from '@/languages';
   import SectionTitle from '@/components/SectionTitle.vue';
   import SectionWrapper from '@/components/SectionWrapper.vue';
   import SectionContentFlow from './SectionContentFlow.vue';
+  import { i18nScope } from '@/languages';
 
-  const dataList = [
-    {
-      title: '日志追踪检索',
-      badge: '工具',
-      content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
-    },
-    {
-      title: '日志追踪检索',
-      badge: '工具',
-      content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
-    },
-    {
-      title: '日志追踪检索',
-      badge: '工具',
-      content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
-    },
-    {
-      title: '日志追踪检索',
-      badge: '工具',
-      content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
-    },
-    {
-      title: '日志追踪检索',
-      badge: '工具',
-      content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
-    },
-    {
-      title: '日志追踪检索',
-      badge: '工具',
-      content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
-    },
-  ];
+  const data: Record<string, { title: string; badge: string; content: string }[]> = {
+    'zh-CN': [
+      {
+        title: '日志追踪检索',
+        badge: '工具',
+        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+      },
+      {
+        title: '日志追踪检索',
+        badge: '工具',
+        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+      },
+      {
+        title: '日志追踪检索',
+        badge: '工具',
+        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+      },
+      {
+        title: '日志追踪检索',
+        badge: '工具',
+        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+      },
+      {
+        title: '日志追踪检索',
+        badge: '工具',
+        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+      },
+      {
+        title: '日志追踪检索',
+        badge: '工具',
+        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+      },
+    ],
+    'en-US': [
+      {
+        title: 'Log Tracking and Retrieval',
+        badge: 'Tool',
+        content:
+          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+      },
+      {
+        title: 'Log Tracking and Retrieval',
+        badge: 'Tool',
+        content:
+          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+      },
+      {
+        title: 'Log Tracking and Retrieval',
+        badge: 'Tool',
+        content:
+          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+      },
+      {
+        title: 'Log Tracking and Retrieval',
+        badge: 'Tool',
+        content:
+          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+      },
+      {
+        title: 'Log Tracking and Retrieval',
+        badge: 'Tool',
+        content:
+          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+      },
+      {
+        title: 'Log Tracking and Retrieval',
+        badge: 'Tool',
+        content:
+          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+      },
+    ],
+  };
+
+  const dataList = computed(() => data[i18nScope.activeLanguage]);
 </script>

@@ -3,19 +3,22 @@
     <template v-for="item in menuData" :key="item.name">
       <div v-if="item.children && item.children.length > 0">
         <div class="xxx">{{ item.children }}</div>
-        <el-sub-menu :index="item.name" :title="item.meta?.title">
+        <el-sub-menu :index="item.name" :title="resolveTitle(item.meta)">
           <template v-for="child in item.children" :key="child.name">
             <el-menu-item :index="child.name">
               <RouterLink :to="{ name: child.name }" :target="child.meta?.blank ? '_blank' : '_self'">
-                {{ child.meta?.title }}
+                {{ resolveTitle(child.meta) }}
               </RouterLink>
             </el-menu-item>
           </template>
         </el-sub-menu>
       </div>
       <el-menu-item v-else :index="item.name">
-        <RouterLink :to="{ name: item.name }" :target="item.meta?.blank ? '_blank' : '_self'">
-          {{ item.meta?.title }}
+        <RouterLink
+          :to="{ name: item.name }"
+          :title="resolveTitle(item.meta)"
+          :target="item.meta?.blank ? '_blank' : '_self'">
+          {{ resolveTitle(item.meta) }}
         </RouterLink>
       </el-menu-item>
     </template>
@@ -25,6 +28,8 @@
 <script setup lang="ts">
   import { useMenuRoutes } from '@/composables/useMenuRoutes';
   import { computed } from 'vue';
+  import { i18nScope } from '@/languages';
+  import { RouteMeta } from 'vue-router';
 
   const props = defineProps<{ layout: string }>();
 
@@ -34,6 +39,18 @@
     const data = getMenuDataFromRoutes();
     return data;
   });
+
+  const resolveTitle = (menuMeta: RouteMeta | undefined) => {
+    let title = '';
+    if (menuMeta) {
+      if (i18nScope.activeLanguage && menuMeta.i18ntitle) {
+        title = menuMeta.i18ntitle[i18nScope.activeLanguage] || menuMeta.title;
+      } else {
+        title = menuMeta.title;
+      }
+    }
+    return title;
+  };
 
   const activeRouteName = computed(() => {
     const routeName = getActiveRouteName();
