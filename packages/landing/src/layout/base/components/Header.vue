@@ -2,8 +2,9 @@
   <div class="w-full h-56px flex-row-center fixed bg-[#fff9] backdrop-blur-100px z-999">
     <div class="w-full flex-row-between px-spacing xxl:w-1500px">
       <div class="flex-row-center flex-shrink-0">
-        <i class="i-ics:logo size-32px flex-shrink-0" />
-        <div class="font-size-22px font-bold ml-spacing-xxs hidden md:block">TBD</div>
+        <!-- <i class="i-ics:logo size-32px flex-shrink-0" /> -->
+        <img :src="LogoA" class="h-32px w-auto hidden md:block" />
+        <img :src="LogoB" class="h-32px w-auto block md:hidden" />
       </div>
       <div class="flex-row-center flex-1 pl-spacing-xs md:pl-spacing-md df:pl-spacing">
         <Menu :layout="layout" />
@@ -43,7 +44,13 @@
   import { nextTick } from 'vue';
   import Menu from './Menu.vue';
   import { t, i18nScope } from '@/languages';
+  import LogoA from '@/assets/images/logo_A.png';
+  import LogoB from '@/assets/images/logo_B.png';
+  import { useGoCS } from '@/composables/useGoCS';
+
   defineProps<{ layout: string }>();
+
+  const goCS = useGoCS();
 
   // const languages = computed(() => {
   //   console.log('i18nScope.messages::::', i18nScope);
@@ -67,9 +74,5 @@
         window.location.reload();
       });
     });
-  };
-
-  const goCS = () => {
-    // TODO 跳转到客服页面
   };
 </script>

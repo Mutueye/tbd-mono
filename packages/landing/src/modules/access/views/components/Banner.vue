@@ -27,14 +27,13 @@
 <script lang="ts" setup>
   import { t } from '@/languages';
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
+  import { useGoCS } from '@/composables/useGoCS';
+
+  const goCS = useGoCS();
 
   const banner_title_1 = t('源头服务商一体化');
   const banner_title_2 = t('全球支付解决方案');
   const banner_intro = t('提供强大丰富的应用开发和系统集成能力，为团队专属的个性化定制方案');
-
-  const goCS = () => {
-    // TODO 跳转到客服页面
-  };
 </script>
 
 <style lang="scss" scoped>
