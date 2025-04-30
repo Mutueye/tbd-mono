@@ -1,18 +1,14 @@
+<!-- license -->
 <template>
   <div class="w-full bg-bg">
     <ResponsiveContainer>
       <SectionWrapper>
-        <div
-          class="w-full flex flex-row items-center py-spacing px-spacing md:px-spacing-xxl lg:px-100px bg-bg-page rounded-12px">
-          <div class="md:flex-1 h-auto flex-col flex">
-            <div class="text-size-18px md:text-size-30px lg:text-size-40px color-text-primary font-500">
-              {{ title }}
-            </div>
-            <div class="text-size-12px md:text-size-16px color-text-primary mt-spacing">{{ info }}</div>
+        <div class="w-full grid grid-cols-1 gap-spacing-sm df:(grid-cols-2 gap-spacing-xxl)">
+          <div
+            class="text-size-18px md:text-size-30px df:mt-spacing lg:(text-size-40px mt-spacing-lg) color-text-primary font-500">
+            {{ info }}
           </div>
-          <div class="flex-shrink-0 size-72px md:(size-200px) lg:(size-260px) ml-spacing-xs">
-            <img :src="PerksImg" class="w-full h-auto object-cover" />
-          </div>
+          <img :src="licenseImg" class="w-full h-auto" />
         </div>
       </SectionWrapper>
     </ResponsiveContainer>
@@ -23,10 +19,9 @@
   import ResponsiveContainer from '@/components/ResponsiveContainer.vue';
   import SectionWrapper from '@/components/SectionWrapper.vue';
   import { t } from '@/languages';
-  import PerksImg from '@/assets/images/perks.svg';
+  import licenseImg from '@/assets/images/license.png';
 
-  const title = t('邀请返佣');
   const info = t(
-    '如果你觉得平台能给你和身边的朋友带来价值，可以复制下述地址分享给身边的朋友，若邀请的新用户在平台中有消费行为，你将获得平台一定的奖励'
+    'Proudly Registered and Licensed as a Money Services Business (MSB) in USA Administered by the Financial Crimes Enforcement Network (FinCEN)'
   );
 </script>

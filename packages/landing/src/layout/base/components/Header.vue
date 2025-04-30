@@ -8,7 +8,7 @@
       </div>
       <div class="flex-row-center flex-1 pl-spacing-xs md:pl-spacing-md df:pl-spacing">
         <Menu :layout="layout" />
-        <el-dropdown trigger="click">
+        <!-- <el-dropdown trigger="click">
           <div class="flex-row-center mr-spacing-md cursor-pointer">
             <i class="i-mdi:language size-20px mr-spacing-4px" />
             <i class="i-mdi:chevron-down size-16px" />
@@ -22,7 +22,7 @@
               </el-dropdown-item>
             </el-dropdown-menu>
           </template>
-        </el-dropdown>
+        </el-dropdown> -->
 
         <div class="hidden md:block">
           <el-button type="primary" round size="small" @click="goCS">
