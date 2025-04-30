@@ -29,12 +29,15 @@
   import support_img_11 from '@/assets/images/support_11.png';
   import support_img_12 from '@/assets/images/support_12.png';
   import support_img_13 from '@/assets/images/support_13.png';
-  import support_img_14 from '@/assets/images/support_14.png';
   import support_img_15 from '@/assets/images/support_15.png';
   import support_img_16 from '@/assets/images/support_16.png';
   import support_img_17 from '@/assets/images/support_17.png';
+  import support_img__1 from '@/assets/images/support__1.png';
+  import support_img__2 from '@/assets/images/support__2.png';
 
   const supportList = [
+    { url: support_img__1 },
+    { url: support_img__2 },
     { url: support_img_1 },
     { url: support_img_2 },
     { url: support_img_6 },
@@ -50,7 +53,6 @@
     { url: support_img_5 },
     { url: support_img_11 },
     { url: support_img_3 },
-    { url: support_img_14 },
     { url: support_img_4 },
   ];
 </script>
