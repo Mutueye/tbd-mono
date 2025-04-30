@@ -34,22 +34,29 @@
     {
       avatar: avatar_1,
       rate: 5,
-      content: '基于开放能力灵活定制，满足复杂业务场景，助力团队数字化升级',
+      content:
+        'The integration with ChatGPT Plus was successful, and HICARD was of great help, effectively resolving the payment issues.\n\n' +
+        'During the payment confirmation process, an issue of "Unable to verify payment method" was triggered. After several unsuccessful retries, I decided to check the HICARD official website out of curiosity and, sure enough, found the relevant documentation, which ultimately resolved the problem.',
     },
     {
       avatar: avatar_2,
       rate: 5,
-      content: '基于开放能力灵活定制，满足复杂业务场景，助力团队数字化升级',
+      content:
+        'I’ve been using HICARD for half a year now, and it’s been rock-solid. No worries about keeping ChatGPT Plus running.\n\n' +
+        'Who gets it, right? It’s so convenient—just recharge and withdraw through Alipay. These days, it feels like you can’t even work without GPT!',
     },
     {
       avatar: avatar_3,
       rate: 5,
-      content: '基于开放能力灵活定制，满足复杂业务场景，助力团队数字化升级',
+      content:
+        "HICARD is just amazing. Recently, I've been using Claude so much that I had to log in to the website to top up my balance. To my surprise, I found that they've already updated so many new features. It seems like they've covered all the major use cases for using OpenAI in China.",
     },
     {
       avatar: avatar_4,
       rate: 5,
-      content: '基于开放能力灵活定制，满足复杂业务场景，助力团队数字化升级',
+      content:
+        "I'm moved to tears! After going through a hundred credit card rejections, trying every possible solution without success, and consulting Apple and bank customer service countless times to no avail, finally!!!\n" +
+        'Thank you, HICARD!!!! For helping a small group of people to fully embrace AI, you bring such a blessing.',
     },
   ];
 </script>

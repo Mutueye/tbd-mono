@@ -41,29 +41,29 @@
         content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
       },
       {
-        title: '日志追踪检索',
-        badge: '工具',
-        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+        title: '周期数据报表',
+        badge: '功能',
+        content: '根据历史数据，可周期性提供数据分析报告，为您运营决策提供科学高效的支撑。',
       },
       {
-        title: '日志追踪检索',
-        badge: '工具',
-        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+        title: '开发接入文档',
+        badge: '文档',
+        content: '标准化的 Open-API 接入规范以及沙箱化的开发环境，协助您快速敏捷开发。',
       },
       {
-        title: '日志追踪检索',
-        badge: '工具',
-        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+        title: '技术专员对接',
+        badge: '独享',
+        content: '一对一技术工程师协助贵司在开发对接过程中遇到的一切技术范畴的问题，并保持持续跟进。',
       },
       {
-        title: '日志追踪检索',
-        badge: '工具',
-        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+        title: '共享风控模型',
+        badge: '独享',
+        content: '生产环境将与平台共享大数据风控模型，以高效应对各种突发状况，杜绝非法用户及行为。',
       },
       {
-        title: '日志追踪检索',
-        badge: '工具',
-        content: '可快捷回溯服务器端、客户端 API 调用的异常日志，方便进行问题排查',
+        title: '推广营销培训',
+        badge: '独享',
+        content: '我们将会根据贵司实际情况，提供持续化的推广营销培训或建议，以快速占领目标市场实现共赢。',
       },
     ],
     'en-US': [
@@ -74,34 +74,34 @@
           'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
       },
       {
-        title: 'Log Tracking and Retrieval',
-        badge: 'Tool',
+        title: 'Periodic Data Reports',
+        badge: 'Func',
         content:
-          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+          'Based on historical data, it can periodically provide data analysis reports, offering scientific and efficient support for your operational decision-making.',
       },
       {
-        title: 'Log Tracking and Retrieval',
-        badge: 'Tool',
+        title: 'Development Integration Documentation',
+        badge: 'Docs',
         content:
-          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+          'Standardized Open-API integration specifications and a sandboxed development environment to assist you in rapid and agile development.',
       },
       {
-        title: 'Log Tracking and Retrieval',
-        badge: 'Tool',
+        title: 'Dedicated Technical Specialist Support',
+        badge: 'Exclusive',
         content:
-          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+          'A one-on-one technical engineer will assist your company with any technical issues encountered during the development and integration process, and will maintain continuous follow-up.',
       },
       {
-        title: 'Log Tracking and Retrieval',
-        badge: 'Tool',
+        title: 'Shared Risk Control Model',
+        badge: 'Exclusive',
         content:
-          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+          'The production environment will share the big data risk control model with the platform to efficiently handle various emergencies and eliminate illegal users and behaviors.',
       },
       {
-        title: 'Log Tracking and Retrieval',
-        badge: 'Tool',
+        title: 'Promotion and Marketing Training',
+        badge: 'Exclusive',
         content:
-          'You can quickly trace exception logs of server-side and client-side API calls, facilitating problem troubleshooting.',
+          "We will provide continuous promotion and marketing training or suggestions tailored to your company's actual situation, to quickly capture the target market and achieve a win-win situation.",
       },
     ],
   };
