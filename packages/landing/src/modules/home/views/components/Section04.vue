@@ -191,7 +191,7 @@
 <style lang="scss">
   .custom-collapse {
     .el-collapse-item__header {
-      @apply text-size-18px h-48px md:(text-size-24px h-90px)  color-text-primary;
+      @apply text-size-18px h-auto! leading-normal! text-left! py-spacing-md min-h-48px md:(text-size-24px min-h-90px)  color-text-primary;
       .el-collapse-item__arrow {
         @apply text-size-14px;
       }
