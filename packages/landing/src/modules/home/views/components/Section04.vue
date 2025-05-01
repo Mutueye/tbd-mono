@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-bg pb-64px">
+  <div class="w-full bg-bg">
     <ResponsiveContainer>
       <SectionWrapper>
         <SectionTitle :title="t('常见问题')" />
