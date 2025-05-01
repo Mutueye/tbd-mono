@@ -1,14 +1,14 @@
 <template>
   <ResponsiveContainer>
     <div
-      class="grid grid-cols-2 gap-spacing-xs md:(grid-cols-2 gap-spacing) lg:(grid-cols-4 gap-spacing-xxl) mt-50px md:mt-80px lg:mt-100px">
+      class="grid grid-cols-2 gap-spacing-xs md:(grid-cols-3 gap-spacing) lg:(grid-cols-3 gap-spacing-xxl) mt-50px md:mt-80px lg:mt-100px">
       <div
         v-for="item in cards"
         :key="item.title"
         class="flex-col-center justify-start rounded-8px px-spacing w-full bg-[#fff9] backdrop-blur-20px py-spacing lg:py-spacing-xxl">
         <img :src="item.icon" class="w-80px h-auto mb-spacing" />
-        <div class="text-size-16px font-500 color-text-primary">{{ item.title }}</div>
-        <div class="text-size-14px color-text-secondary mt-spacing text-justify">{{ item.desc }}</div>
+        <div class="text-size-16px font-500 color-text-primary text-center">{{ item.title }}</div>
+        <div class="text-size-14px color-text-secondary mt-spacing text-center">{{ item.desc }}</div>
       </div>
     </div>
   </ResponsiveContainer>
@@ -21,12 +21,30 @@
   import icon_2 from '@/assets/images/icon_2.png';
   import icon_3 from '@/assets/images/icon_3.png';
   import icon_4 from '@/assets/images/icon_4.png';
+  import icon_5 from '@/assets/images/icon_5.png';
+  import icon_6 from '@/assets/images/icon_6.png';
 
   const cards: { title: string; icon: string; desc: string }[] = [
     {
+      title: t('Customizable Options'),
+      icon: icon_5,
+      desc: t(
+        'Support for custom Apple Pay & Google Pay card logos, covering both physical and virtual cards. Enhance brand visibility and upgrade the payment experience with seamless end-to-end delivery.'
+      ),
+    },
+    {
+      title: t('Management System Provided'),
+      icon: icon_6,
+      desc: t(
+        'An efficient and user-friendly management system helps businesses easily integrate data, optimize processes, and make smarter decisions, boosting operational efficiency and management capabilities.'
+      ),
+    },
+    {
       title: t('无需实名'),
       icon: icon_1,
-      desc: t('无需您提交任何实名认证（KYC）文件，即可快速完成开卡并投入使用，确保您隐私安全的充分保障。'),
+      desc: t(
+        'Simplified KYC – get your card instantly issued and ready to use, with full privacy protection guaranteed.'
+      ),
     },
     {
       title: t('无限开卡'),
