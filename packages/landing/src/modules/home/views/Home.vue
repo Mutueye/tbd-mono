@@ -12,7 +12,7 @@
   <div class="w-full flex flex-col items-center justify-start">
     <Banner />
     <Section01 />
-    <Section02 />
+<!--    <Section02 />-->
     <Section03 />
     <Section05 />
     <Section06 />
