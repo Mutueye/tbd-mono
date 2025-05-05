@@ -4,9 +4,9 @@
   import { i18nScope } from './languages';
   import { onMounted } from 'vue';
 
-  // onMounted(() => {
-  //   i18nScope.defaultLanguage = 'en-US';
-  // });
+  onMounted(() => {
+    i18nScope.change('en-US');
+  });
 </script>
 
 <template>
