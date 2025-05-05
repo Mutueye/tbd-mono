@@ -3,7 +3,7 @@
     <ResponsiveContainer>
       <SectionWrapper>
         <SectionTitle :title="t('Unmatched Security & Compliance')" />
-        <div class="grid grid-cols-1 md:(grid-cols-3 gap-spacing-xxl px-0) px-spacing">
+        <div class="grid grid-cols-1 md:(grid-cols-2 gap-spacing-xxl px-0) px-spacing">
           <div v-for="(item, index) in data" :key="index" class="w-full flex flex-col items-center">
             <img :src="item.img" class="max-w-260 w-full h-auto" />
             <div class="text-size-14px font-bold text-center lg:text-size-18px">{{ item.title }}</div>
@@ -28,10 +28,10 @@
       img: img_badge_1,
       title: t('The PCI Security Standards Council'),
     },
-    {
-      img: img_badge_2,
-      title: t('The Malta Financial Services Authority'),
-    },
+    // {
+    //   img: img_badge_2,
+    //   title: t('The Malta Financial Services Authority'),
+    // },
     {
       img: img_badge_3,
       title: t('Hong Kong Money Service Operators License'),
